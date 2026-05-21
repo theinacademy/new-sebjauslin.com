@@ -1,0 +1,300 @@
+media:
+  input: assets
+  output: /assets
+
+components:
+  link:
+    type: object
+    fields:
+      - name: text
+        label: Text
+        type: string
+      - name: href
+        label: Link URL
+        type: string
+      - name: showArrow
+        label: Show arrow
+        type: boolean
+  image:
+    type: object
+    fields:
+      - name: src
+        label: Image
+        type: image
+      - name: alt
+        label: Alt text
+        type: string
+
+content:
+  - name: site
+    label: Site Content
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: seo
+        label: SEO
+        type: object
+        fields:
+          - name: title
+            label: Browser title
+            type: string
+          - name: description
+            label: Meta description
+            type: text
+
+      - name: nav
+        label: Navigation
+        type: object
+        fields:
+          - name: links
+            label: Menu links
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - name: label
+                type: string
+              - name: href
+                type: string
+          - name: cta
+            label: Desktop CTA
+            component: link
+          - name: mobileCta
+            label: Mobile CTA
+            component: link
+
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - name: kicker
+            type: string
+          - name: headline
+            label: Headline HTML
+            type: text
+            description: Use <br> for line breaks and keep the existing <em class="gradient-text">...</em> if you want red italic emphasis.
+          - name: subtitle
+            type: text
+          - name: cta
+            label: Button
+            component: link
+
+      - name: problem
+        label: Challenge Section
+        type: object
+        fields:
+          - name: kicker
+            type: string
+          - name: headline
+            label: Headline HTML
+            type: text
+          - name: items
+            label: Challenge cards
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                type: string
+              - name: body
+                type: text
+
+      - name: programs
+        label: Programs
+        type: object
+        fields:
+          - name: kicker
+            type: string
+          - name: headline
+            label: Headline HTML
+            type: text
+          - name: intro
+            type: text
+          - name: items
+            label: Program cards
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: tier
+                type: string
+              - name: name
+                type: string
+              - name: duration
+                type: string
+              - name: description
+                type: text
+              - name: features
+                type: string
+                list: true
+              - name: report
+                type: string
+              - name: image
+                component: image
+          - name: footerText
+            label: Footer prompt
+            type: string
+          - name: cta
+            label: Footer button
+            component: link
+
+      - name: workshops
+        label: Workshops
+        type: object
+        fields:
+          - name: kicker
+            type: string
+          - name: headline
+            type: text
+          - name: intro
+            type: text
+          - name: items
+            label: Workshop list
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: name
+                type: string
+              - name: description
+                type: text
+          - name: photos
+            label: Workshop photos
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{caption}"
+            fields:
+              - name: src
+                label: Image
+                type: image
+              - name: alt
+                label: Alt text
+                type: string
+              - name: caption
+                type: string
+              - name: size
+                type: select
+                options:
+                  values: [wide, tall]
+
+      - name: about
+        label: About
+        type: object
+        fields:
+          - name: kicker
+            type: string
+          - name: headline
+            label: Headline HTML
+            type: text
+          - name: bio
+            label: Bio paragraphs
+            type: text
+            list: true
+          - name: credentials
+            type: string
+            list: true
+          - name: cities
+            type: string
+
+      - name: forbes
+        label: Forbes Feature
+        type: object
+        fields:
+          - name: kicker
+            type: string
+          - name: headline
+            type: text
+          - name: meta
+            type: string
+          - name: link
+            component: link
+
+      - name: testimonials
+        label: Testimonials
+        type: object
+        fields:
+          - name: kicker
+            type: string
+          - name: headline
+            type: string
+          - name: items
+            label: Testimonial cards
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: quote
+                type: text
+              - name: name
+                type: string
+              - name: role
+                type: string
+              - name: avatar
+                component: image
+
+      - name: credentials
+        label: Credentials Bar
+        type: object
+        fields:
+          - name: label
+            type: string
+          - name: badges
+            type: string
+            list: true
+
+      - name: cta
+        label: Final CTA
+        type: object
+        fields:
+          - name: kicker
+            type: string
+          - name: headline
+            label: Headline HTML
+            type: text
+          - name: subtitle
+            type: text
+          - name: button
+            component: link
+          - name: quote
+            label: Quote HTML
+            type: text
+          - name: attr
+            label: Attribution
+            type: string
+
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - name: tagline
+            type: text
+          - name: navLabel
+            label: Navigation label
+            type: string
+          - name: locationsLabel
+            label: Locations label
+            type: string
+          - name: cities
+            label: Cities HTML
+            type: text
+          - name: email
+            type: string
+          - name: copy
+            label: Copyright line
+            type: string
+          - name: meta
+            label: Credential line
+            type: string

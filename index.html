@@ -25,12 +25,12 @@
       <img src="./assets/Seb-Jauslin-Logo.svg" alt="Seb Jauslin" class="nav-logo">
     </a>
 
-    <ul class="nav-links">
+    <ul class="nav-links" data-content-list="navLinks">
       <li><a href="#programs">Programs</a></li>
       <li><a href="#workshops">Workshops</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#proof">Results</a></li>
-      <li><a href="https://tally.so/r/44N90A" target="_blank" rel="noopener" class="nav-cta">Take the quiz</a></li>
+      <li><a href="https://tally.so/r/44N90A" target="_blank" rel="noopener" class="nav-cta" data-content="nav.cta">Take the quiz</a></li>
     </ul>
 
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
@@ -40,13 +40,13 @@
 
   <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
-    <ul>
+    <ul data-content-list="mobileNavLinks">
       <li><a href="#programs" class="mobile-nav-link">Programs</a></li>
       <li><a href="#workshops" class="mobile-nav-link">Workshops</a></li>
       <li><a href="#about" class="mobile-nav-link">About</a></li>
       <li><a href="#proof" class="mobile-nav-link">Results</a></li>
     </ul>
-    <a href="https://tally.so/r/44N90A" target="_blank" rel="noopener" class="mobile-menu-cta">Take the leadership quiz</a>
+    <a href="https://tally.so/r/44N90A" target="_blank" rel="noopener" class="mobile-menu-cta" data-content="mobile.cta">Take the leadership quiz</a>
   </div>
 
 
@@ -58,16 +58,16 @@
       <div class="hero-inner">
 
         <div class="hero-content">
-          <span class="kicker">Executive Coaching</span>
-          <h1 class="hero-headline fade-in">
+          <span class="kicker" data-content="hero.kicker">Executive Coaching</span>
+          <h1 class="hero-headline fade-in" data-content="hero.headline">
             When your leaders <em class="gradient-text">grow,</em><br>
             everything grows<br>with them.
           </h1>
-          <p class="hero-sub fade-in delay-1">
+          <p class="hero-sub fade-in delay-1" data-content="hero.subtitle">
             Executive coaching and corporate leadership workshops for senior teams, HR directors and L&amp;D professionals across Europe and Dubai.
           </p>
           <div class="hero-ctas fade-in delay-2">
-            <a href="https://tally.so/r/44N90A" target="_blank" rel="noopener" class="btn-primary">Take the leadership quiz <span>→</span></a>
+            <a href="https://tally.so/r/44N90A" target="_blank" rel="noopener" class="btn-primary" data-content="hero.cta">Take the leadership quiz <span>→</span></a>
           </div>
         </div>
 
@@ -89,8 +89,8 @@
     <div class="container">
 
       <div class="problem-header fade-in">
-        <span class="kicker">The challenge</span>
-        <h2 class="problem-headline">
+        <span class="kicker" data-content="problem.kicker">The challenge</span>
+        <h2 class="problem-headline" data-content="problem.headline">
           Leadership capability rarely<br>develops by accident.
         </h2>
       </div>
@@ -98,18 +98,18 @@
       <div class="problem-grid">
 
         <div class="problem-item fade-in">
-          <h3 class="problem-title">Your leaders are running on empty</h3>
-          <p class="problem-body">As expectations rise and support stays flat, senior leaders burn out quietly. Turnover at the top spikes, culture fragments, and your leadership pipeline becomes thinner than your strategy can afford.</p>
+          <h3 class="problem-title" data-content="problem.items.0.title">Your leaders are running on empty</h3>
+          <p class="problem-body" data-content="problem.items.0.body">As expectations rise and support stays flat, senior leaders burn out quietly. Turnover at the top spikes, culture fragments, and your leadership pipeline becomes thinner than your strategy can afford.</p>
         </div>
 
         <div class="problem-item fade-in delay-1">
-          <h3 class="problem-title">Your teams aren't moving fast enough</h3>
-          <p class="problem-body">Communication breakdowns, stalled decisions, invisible politics. When leaders lack the tools to connect and align their teams, the whole organisation slows. Talent disengages before you notice.</p>
+          <h3 class="problem-title" data-content="problem.items.1.title">Your teams aren't moving fast enough</h3>
+          <p class="problem-body" data-content="problem.items.1.body">Communication breakdowns, stalled decisions, invisible politics. When leaders lack the tools to connect and align their teams, the whole organisation slows. Talent disengages before you notice.</p>
         </div>
 
         <div class="problem-item fade-in delay-2">
-          <h3 class="problem-title">Change is exposing the capability gap</h3>
-          <p class="problem-body">Reorganisations, new mandates, shifting markets. Leaders who cannot navigate uncertainty become bottlenecks rather than accelerators. Only 23% of leaders rate their development as high quality.</p>
+          <h3 class="problem-title" data-content="problem.items.2.title">Change is exposing the capability gap</h3>
+          <p class="problem-body" data-content="problem.items.2.body">Reorganisations, new mandates, shifting markets. Leaders who cannot navigate uncertainty become bottlenecks rather than accelerators. Only 23% of leaders rate their development as high quality.</p>
         </div>
 
       </div>
@@ -125,17 +125,17 @@
 
       <div class="programs-header">
         <div class="fade-in">
-          <span class="kicker">Flagship programs</span>
-          <h2 class="programs-headline">
+          <span class="kicker" data-content="programs.kicker">Flagship programs</span>
+          <h2 class="programs-headline" data-content="programs.headline">
             Three depths of<br><em class="gradient-text">leadership development.</em>
           </h2>
         </div>
-        <p class="programs-intro fade-in delay-1">
+        <p class="programs-intro fade-in delay-1" data-content="programs.intro">
           The Be · Do · Have framework is a structured progression from leadership identity to leadership practice to lasting organisational impact. Each tier is a standalone engagement — or part of a longer transformation.
         </p>
       </div>
 
-      <div class="programs-grid">
+      <div class="programs-grid" data-content-list="programs">
 
         <!-- BE -->
         <div class="program-card fade-in">
@@ -192,9 +192,9 @@
 
       <div class="programs-footer fade-in">
         <p class="programs-footer-text">
-          Not sure which tier fits your organisation?
+          <span data-content="programs.footerText">Not sure which tier fits your organisation?</span>
         </p>
-        <a href="https://tally.so/r/44N90A" target="_blank" rel="noopener" class="btn-primary">Take the leadership quiz <span>→</span></a>
+        <a href="https://tally.so/r/44N90A" target="_blank" rel="noopener" class="btn-primary" data-content="programs.cta">Take the leadership quiz <span>→</span></a>
       </div>
 
     </div>
@@ -208,8 +208,8 @@
     <div class="container">
 
       <div class="workshops-header fade-in">
-        <span class="kicker">Corporate workshops</span>
-        <h2 class="workshops-headline">
+        <span class="kicker" data-content="workshops.kicker">Corporate workshops</span>
+        <h2 class="workshops-headline" data-content="workshops.headline">
           Half-day and full-day workshops designed for leadership teams.
         </h2>
       </div>
@@ -217,12 +217,12 @@
       <div class="workshops-layout">
 
         <div class="workshops-copy fade-in">
-          <p>
+          <p data-content="workshops.intro">
             Practical, high-trust sessions that help leadership teams align, communicate and move through change together.
           </p>
         </div>
 
-        <div class="workshop-list">
+        <div class="workshop-list" data-content-list="workshops">
 
           <article class="workshop-item fade-in">
             <h3 class="workshop-name">Leading Through Change</h3>
@@ -251,7 +251,7 @@
 
         </div>
 
-        <div class="workshops-photos fade-in delay-2">
+        <div class="workshops-photos fade-in delay-2" data-content-list="workshopPhotos">
           <figure class="workshop-photo-wrap workshop-photo-wide">
             <img
               src="./assets/workshop-zurich.png"
@@ -319,25 +319,25 @@
         </div>
 
         <div class="about-content">
-          <span class="kicker fade-in">About</span>
-          <h2 class="about-headline fade-in">
+          <span class="kicker fade-in" data-content="about.kicker">About</span>
+          <h2 class="about-headline fade-in" data-content="about.headline">
             Leadership experience<br>built <em class="gradient-text">inside</em> the system.
           </h2>
 
           <div class="about-bio fade-in delay-1">
-            <p>Seb Jauslin is an ICF PCC Certified Leadership Coach who partners with purpose-driven organisations to build leadership capability that holds under pressure.</p>
-            <p>His background spans law, the United Nations and the Swiss Federal Government — where he saw firsthand how conformity stifles leadership and accelerates burnout. That experience led him to build a coaching practice grounded in evidence-based methodology and real executive experience.</p>
-            <p>He works with senior teams across Zürich, Geneva, London and Málaga, and expanded his practice to Dubai in 2026 to support leadership development in high-growth, culturally complex environments.</p>
+            <p data-content="about.bio.0">Seb Jauslin is an ICF PCC Certified Leadership Coach who partners with purpose-driven organisations to build leadership capability that holds under pressure.</p>
+            <p data-content="about.bio.1">His background spans law, the United Nations and the Swiss Federal Government — where he saw firsthand how conformity stifles leadership and accelerates burnout. That experience led him to build a coaching practice grounded in evidence-based methodology and real executive experience.</p>
+            <p data-content="about.bio.2">He works with senior teams across Zürich, Geneva, London and Málaga, and expanded his practice to Dubai in 2026 to support leadership development in high-growth, culturally complex environments.</p>
           </div>
 
-          <ul class="about-creds fade-in delay-2">
+          <ul class="about-creds fade-in delay-2" data-content-list="aboutCreds">
             <li class="cred-tag">ICF PCC</li>
             <li class="cred-tag">CPCC</li>
             <li class="cred-tag">Featured in Forbes</li>
             <li class="cred-tag">Former UN &amp; Swiss Gov.</li>
           </ul>
 
-          <p class="about-cities fade-in delay-2">
+          <p class="about-cities fade-in delay-2" data-content="about.cities">
             Zürich · Geneva · London · Málaga · Dubai
           </p>
         </div>
@@ -361,29 +361,29 @@
           class="forbes-img"
         >
         <div class="forbes-content">
-          <span class="kicker">Press</span>
+          <span class="kicker" data-content="forbes.kicker">Press</span>
           <img
             src="./assets/forbes-logo-black-transparent.png"
             alt="Forbes"
             class="forbes-logo"
           >
-          <p class="forbes-headline">
+          <p class="forbes-headline" data-content="forbes.headline">
             "Seb Jauslin — assertive leadership through coaching."
           </p>
-          <span class="forbes-meta">Forbes Magazine · September 2023</span>
-          <span class="forbes-link">Read the article <span>→</span></span>
+          <span class="forbes-meta" data-content="forbes.meta">Forbes Magazine · September 2023</span>
+          <span class="forbes-link" data-content="forbes.link">Read the article <span>→</span></span>
         </div>
       </a>
 
       <!-- Testimonials -->
       <div class="testimonials-header fade-in">
-        <span class="kicker">Results from clients</span>
-        <h2 class="testimonials-headline">What leaders say.</h2>
+        <span class="kicker" data-content="testimonials.kicker">Results from clients</span>
+        <h2 class="testimonials-headline" data-content="testimonials.headline">What leaders say.</h2>
       </div>
 
       <div class="testimonials-slider fade-in" data-testimonial-slider>
         <div class="testimonials-viewport">
-          <div class="testimonials-track">
+          <div class="testimonials-track" data-content-list="testimonials">
 
             <article class="testimonial-card">
               <span class="t-mark gradient-text">"</span>
@@ -482,11 +482,13 @@
 
       <!-- Credentials bar -->
       <div class="creds-bar fade-in">
-        <span class="creds-label">As seen in · Accredited by</span>
+        <span class="creds-label" data-content="credentials.label">As seen in · Accredited by</span>
         <div class="creds-logos">
           <img src="./assets/forbes-logo-black-transparent.png" alt="Forbes">
-          <span class="cred-badge">ICF PCC</span>
-          <span class="cred-badge">CPCC</span>
+          <span data-content-list="credentialBadges">
+            <span class="cred-badge">ICF PCC</span>
+            <span class="cred-badge">CPCC</span>
+          </span>
         </div>
       </div>
 
@@ -499,26 +501,26 @@
        ============================================================ -->
   <section class="cta-section" id="cta">
     <div class="container">
-      <span class="kicker">Leadership quiz</span>
+      <span class="kicker" data-content="cta.kicker">Leadership quiz</span>
       <div class="cta-inner">
 
         <div class="fade-in">
-          <h2 class="cta-headline">
+          <h2 class="cta-headline" data-content="cta.headline">
             Ready to invest in your<br><em>leadership capability?</em>
           </h2>
-          <p class="cta-sub">
+          <p class="cta-sub" data-content="cta.subtitle">
             A quick diagnostic to understand your organisation's leadership challenges and identify the development path that fits best.
           </p>
           <div class="cta-btns">
-            <a href="https://tally.so/r/44N90A" target="_blank" rel="noopener" class="btn-light">Take the leadership quiz <span>→</span></a>
+            <a href="https://tally.so/r/44N90A" target="_blank" rel="noopener" class="btn-light" data-content="cta.button">Take the leadership quiz <span>→</span></a>
           </div>
         </div>
 
         <div class="cta-aside fade-in delay-1">
-          <p class="cta-aside-quote">
+          <p class="cta-aside-quote" data-content="cta.quote">
             "Better leaders.<br>Stronger teams.<br>More capable organisations."
           </p>
-          <span class="cta-aside-attr">Seb Jauslin</span>
+          <span class="cta-aside-attr" data-content="cta.attr">Seb Jauslin</span>
         </div>
 
       </div>
@@ -536,14 +538,14 @@
 
         <div class="footer-brand">
           <img src="./assets/Seb-Jauslin-Logo.svg" alt="Seb Jauslin" class="footer-logo">
-          <p class="footer-tagline">
+          <p class="footer-tagline" data-content="footer.tagline">
             ICF PCC executive coaching and leadership workshops for organisations that take culture seriously.
           </p>
         </div>
 
         <div>
-          <span class="footer-col-label">Navigation</span>
-          <ul class="footer-nav-list">
+          <span class="footer-col-label" data-content="footer.navLabel">Navigation</span>
+          <ul class="footer-nav-list" data-content-list="footerNavLinks">
             <li><a href="#programs">Programs</a></li>
             <li><a href="#workshops">Workshops</a></li>
             <li><a href="#about">About</a></li>
@@ -552,22 +554,22 @@
         </div>
 
         <div>
-          <span class="footer-col-label">Locations</span>
-          <p class="footer-cities">
+          <span class="footer-col-label" data-content="footer.locationsLabel">Locations</span>
+          <p class="footer-cities" data-content="footer.cities">
             ZRH · Zürich<br>
             GVA · Geneva<br>
             LON · London<br>
             AGP · Málaga<br>
             DXB · Dubai
           </p>
-          <a href="mailto:hello@sebjauslin.com" class="footer-contact">hello@sebjauslin.com</a>
+          <a href="mailto:hello@sebjauslin.com" class="footer-contact" data-content="footer.contact">hello@sebjauslin.com</a>
         </div>
 
       </div>
 
       <div class="footer-bottom">
-        <span class="footer-copy">© 2025 Seb Jauslin · All rights reserved</span>
-        <span class="footer-copy">ICF PCC · CPCC · Featured in Forbes</span>
+        <span class="footer-copy" data-content="footer.copy">© 2025 Seb Jauslin · All rights reserved</span>
+        <span class="footer-copy" data-content="footer.meta">ICF PCC · CPCC · Featured in Forbes</span>
       </div>
 
     </div>

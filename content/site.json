@@ -1,0 +1,291 @@
+{
+  "seo": {
+    "title": "Seb Jauslin — Executive Coaching & Leadership Workshops",
+    "description": "ICF PCC certified executive coaching and corporate leadership workshops for senior teams and HR professionals across Zürich, Geneva, London, Málaga and Dubai."
+  },
+  "nav": {
+    "links": [
+      { "label": "Programs", "href": "#programs" },
+      { "label": "Workshops", "href": "#workshops" },
+      { "label": "About", "href": "#about" },
+      { "label": "Results", "href": "#proof" }
+    ],
+    "cta": {
+      "text": "Take the quiz",
+      "href": "https://tally.so/r/44N90A",
+      "showArrow": false
+    },
+    "mobileCta": {
+      "text": "Take the leadership quiz",
+      "href": "https://tally.so/r/44N90A",
+      "showArrow": false
+    }
+  },
+  "hero": {
+    "kicker": "Executive Coaching",
+    "headline": "When your leaders <em class=\"gradient-text\">grow,</em><br>everything grows<br>with them.",
+    "subtitle": "Executive coaching and corporate leadership workshops for senior teams, HR directors and L&D professionals across Europe and Dubai.",
+    "cta": {
+      "text": "Take the leadership quiz",
+      "href": "https://tally.so/r/44N90A"
+    }
+  },
+  "problem": {
+    "kicker": "The challenge",
+    "headline": "Leadership capability rarely<br>develops by accident.",
+    "items": [
+      {
+        "title": "Your leaders are running on empty",
+        "body": "As expectations rise and support stays flat, senior leaders burn out quietly. Turnover at the top spikes, culture fragments, and your leadership pipeline becomes thinner than your strategy can afford."
+      },
+      {
+        "title": "Your teams aren't moving fast enough",
+        "body": "Communication breakdowns, stalled decisions, invisible politics. When leaders lack the tools to connect and align their teams, the whole organisation slows. Talent disengages before you notice."
+      },
+      {
+        "title": "Change is exposing the capability gap",
+        "body": "Reorganisations, new mandates, shifting markets. Leaders who cannot navigate uncertainty become bottlenecks rather than accelerators. Only 23% of leaders rate their development as high quality."
+      }
+    ]
+  },
+  "programs": {
+    "kicker": "Flagship programs",
+    "headline": "Three depths of<br><em class=\"gradient-text\">leadership development.</em>",
+    "intro": "The Be · Do · Have framework is a structured progression from leadership identity to leadership practice to lasting organisational impact. Each tier is a standalone engagement — or part of a longer transformation.",
+    "items": [
+      {
+        "tier": "Leadership identity",
+        "name": "BE",
+        "duration": "3 months · Identity",
+        "description": "Clarity — understanding who you are as a leader. The foundation for everything that follows.",
+        "features": [
+          "Reveal your Motivation Drivers and Killers",
+          "Identify Blind Spots, Triggers and Strengths",
+          "Overcome the fears limiting your growth"
+        ],
+        "report": "Includes 3D Personal Report",
+        "image": {
+          "src": "/assets/BE-V6.png",
+          "alt": "BE Program — Leadership Identity"
+        }
+      },
+      {
+        "tier": "Leadership practice",
+        "name": "DO",
+        "duration": "6 months · Capability",
+        "description": "Capability — how you lead others. Build the trust, communication and influence that high-performing teams require.",
+        "features": [
+          "Understand your Communication Style",
+          "Influence people and situations positively",
+          "Address conflict and difficult conversations"
+        ],
+        "report": "Includes 4D Leadership Report",
+        "image": {
+          "src": "/assets/DO-V6.png",
+          "alt": "DO Program — Leadership Practice"
+        }
+      },
+      {
+        "tier": "Leadership impact",
+        "name": "HAVE",
+        "duration": "12 months · Impact",
+        "description": "Impact — shaping culture across the organisation. For leaders ready to build a legacy that outlasts them.",
+        "features": [
+          "Develop your Mission, Vision and Values",
+          "Develop future leaders within your team",
+          "Connect work to a larger organisational purpose"
+        ],
+        "report": "Includes Behavioural Genetics DNA Report",
+        "image": {
+          "src": "/assets/HAVE-V6.png",
+          "alt": "HAVE Program — Leadership Legacy"
+        }
+      }
+    ],
+    "footerText": "Not sure which tier fits your organisation?",
+    "cta": {
+      "text": "Take the leadership quiz",
+      "href": "https://tally.so/r/44N90A"
+    }
+  },
+  "workshops": {
+    "kicker": "Corporate workshops",
+    "headline": "Half-day and full-day workshops designed for leadership teams.",
+    "intro": "Practical, high-trust sessions that help leadership teams align, communicate and move through change together.",
+    "items": [
+      {
+        "name": "Leading Through Change",
+        "description": "Equip your leadership team to guide transformation, uncertainty and disruption without losing trust or momentum."
+      },
+      {
+        "name": "Leading Across Borders",
+        "description": "Develop cross-cultural communication and leadership skills for global organisations with distributed teams."
+      },
+      {
+        "name": "Powerful Conversations",
+        "description": "Frameworks for senior leaders who need to manage conflict and deliver feedback that lands."
+      },
+      {
+        "name": "Women in Leadership",
+        "description": "Practical tools, peer learning and sustainable frameworks for women leaders in complex organisations."
+      },
+      {
+        "name": "Trusted Leaders",
+        "description": "Build high-trust leadership culture through accountability and psychological safety frameworks that stick."
+      }
+    ],
+    "photos": [
+      {
+        "src": "/assets/workshop-zurich.png",
+        "alt": "Corporate workshop in Zürich",
+        "caption": "Corporate Workshop · Zürich",
+        "size": "wide"
+      },
+      {
+        "src": "/assets/retreat zurich switzerland.jpg",
+        "alt": "Leadership retreat in Zürich, Switzerland",
+        "caption": "Leadership Retreat · Switzerland",
+        "size": "wide"
+      },
+      {
+        "src": "/assets/GOOGLE-LEADERSHIP-WORKSHOP-LONDON.png",
+        "alt": "Leadership workshop in London",
+        "caption": "Leadership Workshop · London",
+        "size": "tall"
+      },
+      {
+        "src": "/assets/ZURICH-LEADING-THROUGH-CHANGE-WORKSHOP-SWITYERLAND.png",
+        "alt": "Leading Through Change workshop in Zürich",
+        "caption": "Leading Through Change · Zürich",
+        "size": "tall"
+      },
+      {
+        "src": "/assets/MALAGA-TEAM-BUILDING.png",
+        "alt": "Team Building retreat in Málaga",
+        "caption": "Team Building Retreat · Málaga",
+        "size": "tall"
+      }
+    ]
+  },
+  "about": {
+    "kicker": "About",
+    "headline": "Leadership experience<br>built <em class=\"gradient-text\">inside</em> the system.",
+    "bio": [
+      "Seb Jauslin is an ICF PCC Certified Leadership Coach who partners with purpose-driven organisations to build leadership capability that holds under pressure.",
+      "His background spans law, the United Nations and the Swiss Federal Government — where he saw firsthand how conformity stifles leadership and accelerates burnout. That experience led him to build a coaching practice grounded in evidence-based methodology and real executive experience.",
+      "He works with senior teams across Zürich, Geneva, London and Málaga, and expanded his practice to Dubai in 2026 to support leadership development in high-growth, culturally complex environments."
+    ],
+    "credentials": [
+      "ICF PCC",
+      "CPCC",
+      "Featured in Forbes",
+      "Former UN & Swiss Gov."
+    ],
+    "cities": "Zürich · Geneva · London · Málaga · Dubai"
+  },
+  "forbes": {
+    "kicker": "Press",
+    "headline": "\"Seb Jauslin — assertive leadership through coaching.\"",
+    "meta": "Forbes Magazine · September 2023",
+    "link": {
+      "text": "Read the article",
+      "href": "https://www.forbes.fr/mediasfrance/seb-jauslin/"
+    }
+  },
+  "testimonials": {
+    "kicker": "Results from clients",
+    "headline": "What leaders say.",
+    "items": [
+      {
+        "quote": "Seb showed a strong ability to tailor his approach to the specific challenges of my sector. He quickly creates a space of trust and confidence, and his follow-up helped me stay focused and make progress.",
+        "name": "Luca Guanziroli",
+        "role": "UN Advisor · Peacebuilding & Strategic Management",
+        "avatar": {
+          "src": "/assets/Luca-Guanziroli.png",
+          "alt": "Luca Guanziroli"
+        }
+      },
+      {
+        "quote": "Working with Seb has been a truly transformative experience. His insightful guidance helped me gain confidence, understand my strengths and take meaningful steps toward my career goals.",
+        "name": "Maéva Roemer",
+        "role": "Manager · Fossil Group",
+        "avatar": {
+          "src": "/assets/Maeva-ROEMER.png",
+          "alt": "Maéva Roemer"
+        }
+      },
+      {
+        "quote": "From the very first workshop, I knew Seb was someone different. He brings a different meaning to what a workshop can be, creating an environment where people feel safe, engaged and inspired.",
+        "name": "Carlota Bello Suárez",
+        "role": "Key Account & Customer Supply Chain Leader",
+        "avatar": {
+          "src": "/assets/Carlota-Bello-Suarez.png",
+          "alt": "Carlota Bello Suárez"
+        }
+      },
+      {
+        "quote": "Through my sessions with Seb, I gained confidence, clarity about who I am as a leader, and tools to make bold moves aligned with my values. His empathetic approach made me more empowered.",
+        "name": "Sandrine Zeferino",
+        "role": "Managing Director · Global Innovation & Brand",
+        "avatar": {
+          "src": "/assets/Sandrine-Zeferino.png",
+          "alt": "Sandrine Zeferino"
+        }
+      },
+      {
+        "quote": "Seb cuts straight to the heart of what's holding you back. He helped me gain awareness of my professional value and move through complex relational hurdles with a focused, calm mindset.",
+        "name": "Federica Gilardoni",
+        "role": "Merchandise Planning Senior Lead · On",
+        "avatar": {
+          "src": "/assets/Federica-Gilardoni.png",
+          "alt": "Federica Gilardoni"
+        }
+      },
+      {
+        "quote": "Seb's coaching helped me turn reflection into practical action. His questions created clarity, strengthened my confidence and helped me lead with more presence in demanding situations.",
+        "name": "Beata Brozowski",
+        "role": "Director · Global Sanctions & Financial Crime Compliance",
+        "avatar": {
+          "src": "/assets/Beata-Brozowski.png",
+          "alt": "Beata Brozowski"
+        }
+      },
+      {
+        "quote": "From the beginning, Seb established an atmosphere of trust that allowed me to explore my leadership journey with clarity and confidence. The exercises were insightful and immediately impactful.",
+        "name": "Axelle Figard",
+        "role": "Executive Manager · The Estée Lauder Companies",
+        "avatar": {
+          "src": "/assets/Axelle-FIGARD.png",
+          "alt": "Axelle Figard"
+        }
+      }
+    ]
+  },
+  "credentials": {
+    "label": "As seen in · Accredited by",
+    "badges": [
+      "ICF PCC",
+      "CPCC"
+    ]
+  },
+  "cta": {
+    "kicker": "Leadership quiz",
+    "headline": "Ready to invest in your<br><em>leadership capability?</em>",
+    "subtitle": "A quick diagnostic to understand your organisation's leadership challenges and identify the development path that fits best.",
+    "button": {
+      "text": "Take the leadership quiz",
+      "href": "https://tally.so/r/44N90A"
+    },
+    "quote": "\"Better leaders.<br>Stronger teams.<br>More capable organisations.\"",
+    "attr": "Seb Jauslin"
+  },
+  "footer": {
+    "tagline": "ICF PCC executive coaching and leadership workshops for organisations that take culture seriously.",
+    "navLabel": "Navigation",
+    "locationsLabel": "Locations",
+    "cities": "ZRH · Zürich<br>GVA · Geneva<br>LON · London<br>AGP · Málaga<br>DXB · Dubai",
+    "email": "hello@sebjauslin.com",
+    "copy": "© 2025 Seb Jauslin · All rights reserved",
+    "meta": "ICF PCC · CPCC · Featured in Forbes"
+  }
+}
