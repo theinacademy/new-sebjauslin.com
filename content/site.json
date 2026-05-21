@@ -5,10 +5,22 @@
   },
   "nav": {
     "links": [
-      { "label": "Programs", "href": "#programs" },
-      { "label": "Workshops", "href": "#workshops" },
-      { "label": "About", "href": "#about" },
-      { "label": "Results", "href": "#proof" }
+      {
+        "label": "Programs",
+        "href": "#programs"
+      },
+      {
+        "label": "Workshops",
+        "href": "#workshops"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Results",
+        "href": "#proof"
+      }
     ],
     "cta": {
       "text": "Take the quiz",
@@ -23,11 +35,12 @@
   },
   "hero": {
     "kicker": "Executive Coaching",
-    "headline": "When your leaders <em class=\"gradient-text\">grow,</em><br>everything grows<br>with them.",
+    "headline": "When your leaders <em class=\"gradient-text\">grow,</em><br>everything grows<br>with them",
     "subtitle": "Executive coaching and corporate leadership workshops for senior teams, HR directors and L&D professionals across Europe and Dubai.",
     "cta": {
       "text": "Take the leadership quiz",
-      "href": "https://tally.so/r/44N90A"
+      "href": "https://tally.so/r/44N90A",
+      "showArrow": false
     }
   },
   "problem": {
@@ -105,7 +118,8 @@
     "footerText": "Not sure which tier fits your organisation?",
     "cta": {
       "text": "Take the leadership quiz",
-      "href": "https://tally.so/r/44N90A"
+      "href": "https://tally.so/r/44N90A",
+      "showArrow": false
     }
   },
   "workshops": {
@@ -189,7 +203,8 @@
     "meta": "Forbes Magazine · September 2023",
     "link": {
       "text": "Read the article",
-      "href": "https://www.forbes.fr/mediasfrance/seb-jauslin/"
+      "href": "https://www.forbes.fr/mediasfrance/seb-jauslin/",
+      "showArrow": false
     }
   },
   "testimonials": {
@@ -274,7 +289,8 @@
     "subtitle": "A quick diagnostic to understand your organisation's leadership challenges and identify the development path that fits best.",
     "button": {
       "text": "Take the leadership quiz",
-      "href": "https://tally.so/r/44N90A"
+      "href": "https://tally.so/r/44N90A",
+      "showArrow": false
     },
     "quote": "\"Better leaders.<br>Stronger teams.<br>More capable organisations.\"",
     "attr": "Seb Jauslin"
