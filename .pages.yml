@@ -10,11 +10,12 @@ components:
         label: Text
         type: string
       - name: href
-        label: Link URL
+        label: URL
         type: string
       - name: showArrow
         label: Show arrow
         type: boolean
+
   image:
     type: object
     fields:
@@ -27,7 +28,7 @@ components:
 
 content:
   - name: site
-    label: Site Content
+    label: Website Content
     type: file
     path: content/site.json
     format: json
@@ -44,7 +45,7 @@ content:
             type: text
 
       - name: nav
-        label: Navigation
+        label: Header Navigation
         type: object
         fields:
           - name: links
@@ -56,14 +57,13 @@ content:
                 summary: "{label}"
             fields:
               - name: label
+                label: Label
                 type: string
               - name: href
+                label: Anchor or URL
                 type: string
           - name: cta
-            label: Desktop CTA
-            component: link
-          - name: mobileCta
-            label: Mobile CTA
+            label: Header CTA
             component: link
 
       - name: hero
@@ -71,134 +71,216 @@ content:
         type: object
         fields:
           - name: kicker
+            label: Eyebrow
             type: string
           - name: headline
             label: Headline HTML
             type: text
-            description: Use <br> for line breaks and keep the existing <em class="gradient-text">...</em> if you want red italic emphasis.
+            description: Keep <br> for line breaks and <em class="gradient-text">...</em> for the red italic emphasis.
           - name: subtitle
+            label: Intro copy
             type: text
+          - name: support
+            label: Supporting line
+            type: text
+          - name: proof
+            label: Proof badges
+            type: string
+            list: true
           - name: cta
-            label: Button
+            label: Hero CTA
             component: link
 
-      - name: problem
-        label: Challenge Section
+      - name: cost
+        label: Cost of Inaction
         type: object
         fields:
           - name: kicker
+            label: Eyebrow
             type: string
           - name: headline
-            label: Headline HTML
+            label: Headline
             type: text
-          - name: items
-            label: Challenge cards
+          - name: intro
+            label: Intro paragraphs
+            type: text
+            list: true
+          - name: stats
+            label: Statistics
             type: object
             list:
               collapsible:
                 collapsed: true
-                summary: "{title}"
+                summary: "{value}"
             fields:
-              - name: title
+              - name: value
+                label: Stat value
+                type: string
+              - name: label
+                label: Stat label
+                type: text
+          - name: truth
+            label: Closing statement
+            type: text
+
+      - name: method
+        label: Method
+        type: object
+        fields:
+          - name: kicker
+            label: Eyebrow
+            type: string
+          - name: headline
+            label: Headline
+            type: text
+          - name: intro
+            label: Intro paragraphs
+            type: text
+            list: true
+          - name: quote
+            label: Quote
+            type: text
+          - name: quoteAttr
+            label: Quote attribution
+            type: string
+          - name: architecture
+            label: BE > DO > HAVE Architecture
+            type: object
+            fields:
+              - name: headline
+                type: string
+              - name: intro
+                type: text
+              - name: body
+                type: text
+          - name: stages
+            label: Method stages
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name} — {label}"
+            fields:
+              - name: name
+                type: string
+              - name: label
+                type: string
+              - name: headline
                 type: string
               - name: body
                 type: text
-
-      - name: programs
-        label: Programs
-        type: object
-        fields:
-          - name: kicker
-            type: string
-          - name: headline
-            label: Headline HTML
-            type: text
-          - name: intro
-            type: text
-          - name: items
-            label: Program cards
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{name}"
-            fields:
-              - name: tier
-                type: string
-              - name: name
-                type: string
-              - name: duration
-                type: string
-              - name: description
+              - name: coaching
+                label: 1:1 coaching copy
                 type: text
-              - name: features
-                type: string
-                list: true
-              - name: report
-                type: string
+              - name: workshop
+                label: Workshop copy
+                type: text
               - name: image
                 component: image
-          - name: footerText
-            label: Footer prompt
-            type: string
-          - name: cta
-            label: Footer button
-            component: link
 
-      - name: workshops
-        label: Workshops
+      - name: proof
+        label: Proof Section
         type: object
         fields:
           - name: kicker
+            label: Eyebrow
             type: string
           - name: headline
             type: text
-          - name: intro
-            type: text
-          - name: items
-            label: Workshop list
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{name}"
-            fields:
-              - name: name
-                type: string
-              - name: description
-                type: text
-          - name: photos
-            label: Workshop photos
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{caption}"
-            fields:
-              - name: src
-                label: Image
-                type: image
-              - name: alt
-                label: Alt text
-                type: string
-              - name: caption
-                type: string
-              - name: size
-                type: select
-                options:
-                  values: [wide, tall]
 
-      - name: about
-        label: About
+      - name: caseStudies
+        label: Case Studies
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            type: string
+          - name: meta
+            label: Meta line
+            type: string
+          - name: situation
+            type: text
+          - name: intervention
+            type: text
+          - name: outcome
+            label: Outcomes
+            type: string
+            list: true
+          - name: roi
+            label: ROI copy
+            type: text
+          - name: quote
+            type: text
+          - name: person
+            label: Person
+            type: string
+          - name: role
+            type: string
+          - name: avatar
+            label: Avatar
+            type: image
+
+      - name: pullQuotes
+        label: Pull Quotes
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{person}"
+        fields:
+          - name: quote
+            type: text
+          - name: person
+            type: string
+          - name: role
+            type: string
+          - name: avatar
+            type: image
+
+      - name: offer
+        label: Offer Section
         type: object
         fields:
           - name: kicker
+            label: Eyebrow
             type: string
           - name: headline
-            label: Headline HTML
             type: text
-          - name: bio
-            label: Bio paragraphs
+          - name: note
+            type: text
+
+      - name: offers
+        label: Offers
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: audience
+            type: string
+          - name: title
+            type: string
+          - name: body
+            type: text
+          - name: bullets
+            type: string
+            list: true
+
+      - name: whySeb
+        label: Why Seb
+        type: object
+        fields:
+          - name: kicker
+            label: Eyebrow
+            type: string
+          - name: headline
+            type: text
+          - name: body
+            label: Body paragraphs
             type: text
             list: true
           - name: credentials
@@ -206,66 +288,37 @@ content:
             list: true
           - name: cities
             type: string
-
-      - name: forbes
-        label: Forbes Feature
-        type: object
-        fields:
-          - name: kicker
-            type: string
-          - name: headline
-            type: text
-          - name: meta
-            type: string
-          - name: link
-            component: link
-
-      - name: testimonials
-        label: Testimonials
-        type: object
-        fields:
-          - name: kicker
-            type: string
-          - name: headline
-            type: string
-          - name: items
-            label: Testimonial cards
+          - name: image
+            component: image
+          - name: forbes
+            label: Forbes Feature
             type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{name}"
             fields:
-              - name: quote
+              - name: headline
                 type: text
-              - name: name
+              - name: meta
                 type: string
-              - name: role
+              - name: href
+                label: Article URL
                 type: string
-              - name: avatar
-                component: image
-
-      - name: credentials
-        label: Credentials Bar
-        type: object
-        fields:
-          - name: label
-            type: string
-          - name: badges
-            type: string
-            list: true
+              - name: image
+                label: Feature image
+                type: image
 
       - name: cta
         label: Final CTA
         type: object
         fields:
           - name: kicker
+            label: Eyebrow
             type: string
           - name: headline
-            label: Headline HTML
             type: text
           - name: subtitle
             type: text
+          - name: line
+            label: Emphasis line
+            type: string
           - name: button
             component: link
           - name: quote
